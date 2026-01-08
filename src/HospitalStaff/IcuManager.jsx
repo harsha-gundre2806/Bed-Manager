@@ -1,0 +1,1 @@
+// can change the position of the patient to discharged (puts bed empty)
