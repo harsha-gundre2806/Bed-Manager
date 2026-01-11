@@ -1,70 +1,3 @@
-src/
-├── api/
-│   └── api.txt ---> will be added later
-├── assets/
-│   └── react.svg
-├── components/
-│   ├── admin/
-│   │   ├── AddEmployee.jsx
-│   │   └── EditEmployee.jsx
-│   ├── common/
-│   │   ├── LoadingSpinner.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Notification.jsx
-│   │   └── Sidebar.jsx
-│   ├── patient/
-│   │   ├── AssignedStaffCard.jsx
-│   │   ├── CreateProfile.jsx
-│   │   ├── EditProfile.jsx
-│   │   ├── OTPStatus.jsx
-│   │   ├── RaiseComplaint.jsx
-│   │   ├── RateStaff.jsx
-│   │   └── ServiceRequest.jsx
-│   └── staff/
-│       ├── MyRatings.jsx
-│       ├── OTPVerification.jsx
-│       └── ServiceStatus.jsx
-├── containers/
-│   ├── admin/
-│   │   ├── AdminDashboard.jsx
-│   │   ├── ComplaintsManager.jsx
-│   │   ├── RevenueDashboard.jsx
-│   │   └── StaffManagement.jsx
-│   ├── PatientDashboard.jsx
-│   └── StaffDashboard.jsx
-├── layout/
-│   └── DashboardLayout.jsx
-├── lib/
-│   └── supabase.js
-├── pages/
-│   ├── admin/
-│   │   ├── Analytics.jsx
-│   │   ├── ComplaintsPage.jsx
-│   │   └── QueueManagement.jsx
-│   ├── auth/
-│   │   ├── ForgotPassword.jsx
-│   │   ├── Login.jsx
-│   │   └── Register.jsx
-│   ├── patient/
-│   │   ├── MyRequests.jsx
-│   │   └── RequestService.jsx
-│   └── staff/
-│       └── MyAssignments.jsx
-├── routes/
-│   └── routes.jsx
-├── styles/
-│   ├── AddEmp.css
-│   ├── dashboard.css
-│   ├── global.css
-│   ├── navbar.css
-│   ├── notification.css
-│   └── queue.css              ---> some other css files will be added later
-├── App.css
-├── App.jsx
-├── index.css
-└── main.jsx
-
-
 components/admin/
 
 AddEmployee.jsx - Pure UI form component with input fields (name, email, specialization, role) for creating new staff members. Receives onSubmit handler as prop from parent container, no API logic inside.
@@ -186,3 +119,70 @@ notification.css - Toast notification styling including positioning (top-right c
 
 queue.css - Specific styling for queue management page including queue cards, status badges, assign dropdowns, and real-time update animations. Handles queue item layout and priority indicators.
 
+
+
+src/
+├── api/
+│   └── api.txt ---> will be added later
+├── assets/
+│   └── react.svg
+├── components/
+│   ├── admin/
+│   │   ├── AddEmployee.jsx
+│   │   └── EditEmployee.jsx
+│   ├── common/
+│   │   ├── LoadingSpinner.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Notification.jsx
+│   │   └── Sidebar.jsx
+│   ├── patient/
+│   │   ├── AssignedStaffCard.jsx
+│   │   ├── CreateProfile.jsx
+│   │   ├── EditProfile.jsx
+│   │   ├── OTPStatus.jsx
+│   │   ├── RaiseComplaint.jsx
+│   │   ├── RateStaff.jsx
+│   │   └── ServiceRequest.jsx
+│   └── staff/
+│       ├── MyRatings.jsx
+│       ├── OTPVerification.jsx
+│       └── ServiceStatus.jsx
+├── containers/
+│   ├── admin/
+│   │   ├── AdminDashboard.jsx
+│   │   ├── ComplaintsManager.jsx
+│   │   ├── RevenueDashboard.jsx
+│   │   └── StaffManagement.jsx
+│   ├── PatientDashboard.jsx
+│   └── StaffDashboard.jsx
+├── layout/
+│   └── DashboardLayout.jsx
+├── lib/
+│   └── supabase.js
+├── pages/
+│   ├── admin/
+│   │   ├── Analytics.jsx
+│   │   ├── ComplaintsPage.jsx
+│   │   └── QueueManagement.jsx
+│   ├── auth/
+│   │   ├── ForgotPassword.jsx
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   ├── patient/
+│   │   ├── MyRequests.jsx
+│   │   └── RequestService.jsx
+│   └── staff/
+│       └── MyAssignments.jsx
+├── routes/
+│   └── routes.jsx
+├── styles/
+│   ├── AddEmp.css
+│   ├── dashboard.css
+│   ├── global.css
+│   ├── navbar.css
+│   ├── notification.css
+│   └── queue.css              ---> some other css files will be added later
+├── App.css
+├── App.jsx
+├── index.css
+└── main.jsx
