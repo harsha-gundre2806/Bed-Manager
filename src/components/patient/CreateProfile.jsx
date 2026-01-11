@@ -13,6 +13,11 @@ export default function CreateProfile() {
         e.preventDefault();
         // need to add notification
         console.log('details submitted');
+        setName('');
+        setNumber('');
+        setEmail('');
+        setDob('');
+        setAddress('');
     }
   return (
     <>
@@ -65,40 +70,45 @@ export default function CreateProfile() {
 
 
 // option 2
+// import React, { useState } from 'react';
 
 // export default function CreateProfile() {
-//   const [formData, setFormData] = useState({
+//   const [form, setForm] = useState({
 //     name: '',
-//     phone: '',
+//     number: '',
 //     email: '',
-//     age: '',
+//     dob: '',
 //     address: ''
 //   });
 
 //   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//     const { name, value } = e.target;
+//     setForm(prev => ({ ...prev, [name]: value }));
 //   };
+
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
-//     console.log("patients data:", formData);
+//     console.log('details submitted');
+//     setForm({
+//       name: '',
+//       number: '',
+//       email: '',
+//       dob: '',
+//       address: ''
+//     });
 //   };
 
 //   return (
-//     <div className='container'>
-//       <h2>Patient Profile</h2>
-//       <form onSubmit={handleSubmit} className='form'>
-//         <label>Full Name</label>
-//         <input name="name" type='text' required value={formData.name} onChange={handleChange} />
-//         <label>mobile Number</label>
-//         <input name="phone" type='tel' required value={formData.phone} onChange={handleChange} />
-//         <label>Email</label>
-//         <input name="email" type='email' required value={formData.email} onChange={handleChange} />
-//         <label>Age</label>
-//         <input name="age" type='number' required value={formData.age} onChange={handleChange} />
-//         <label>Address</label>
-//         <textarea name="address" required value={formData.address} onChange={handleChange} />
-//         <button type="submit">Save Profile</button>
+//     <div className="container">
+//       <form onSubmit={handleSubmit} className="form">
+//         <input name="name" value={form.name} onChange={handleChange} placeholder="enter name" required />
+//         <input name="number" value={form.number} onChange={handleChange} placeholder="enter mobile number" required />
+//         <input name="email" value={form.email} onChange={handleChange} placeholder="enter email" required />
+//         <input type="date" name="dob" value={form.dob} onChange={handleChange} required />
+//         <input name="address" value={form.address} onChange={handleChange} placeholder="enter address" required />
+//         <button type="submit">submit details</button>
 //       </form>
 //     </div>
 //   );
 // }
+
