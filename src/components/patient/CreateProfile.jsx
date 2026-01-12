@@ -1,6 +1,8 @@
 // Form for new patients to create their profile with medical details
+// same css for create profile and edit profile
 
-import React,{useState} from 'react'
+import '../../styles/Patientprofile.css'
+import {useState} from 'react'
 import Notification from '../common/Notification';
 
 export default function CreateProfile() {
@@ -56,7 +58,8 @@ export default function CreateProfile() {
             value={dob}
             placeholder='date of birth'
             required
-            onChange={(e)=>setDob(e.target.value)}                      
+            onChange={(e)=>setDob(e.target.value)}  
+            onFocus={(e) => e.target.showPicker && e.target.showPicker()}                    
             />
             <input
             type='text'
@@ -74,5 +77,6 @@ export default function CreateProfile() {
     </>
   );
 }
+
 
 
