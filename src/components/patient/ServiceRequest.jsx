@@ -10,6 +10,7 @@ export default function ServiceRequest() {
     const [address,setAddress] = useState('');
     const [text , setText] = useState('');
     const [notify,setNotify]=  useState('');
+    const [emergency , setEmergency]=useState('');
 
     const handleSubmit=(e)=>{   // we will connect it to backend
         e.preventDefault();
@@ -26,6 +27,7 @@ export default function ServiceRequest() {
         setNumber('');
         setAddress('');
         setText('');
+        setEmergency('');
     }
 
     useEffect(()=>{
@@ -74,10 +76,21 @@ export default function ServiceRequest() {
             style={{
                 backgroundColor:'white',
                 color:'black',
+                borderRadius:'8px',
             }}
 
             onChange={(e)=>setText(e.target.value)}
             />
+            <select
+              value={emergency}
+              onChange={(e) => setEmergency(e.target.value)}
+              required
+              >
+                <option value=" ">select service type (default is regular service)</option>
+                <option value="regular checkup" default>Regular checkup</option>
+                <option value="emergency">emergency</option>
+            </select>
+            
           <button type="submit" >
             submit details
           </button>

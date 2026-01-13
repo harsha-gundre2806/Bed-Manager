@@ -41,6 +41,12 @@ export default function RateStaff() {
         });
         setNotify('thankyou for your rating');
         setTimeout(()=>setNotify(''),5000);
+
+        setName('');
+        setNumber('');
+        setStaff('');
+        setRating('');
+        setText('');
     };
 
   return (
@@ -85,6 +91,7 @@ export default function RateStaff() {
             style={{
                 backgroundColor:'white',
                 color:'black',
+                borderRadius:'8px',
             }}
 
             onChange={(e)=>setText(e.target.value)}

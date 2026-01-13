@@ -1,1 +1,0 @@
-//Registration page for new patients to create accounts

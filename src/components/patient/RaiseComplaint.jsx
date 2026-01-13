@@ -26,6 +26,9 @@ export default function RaiseComplaint() {
 
     setNotify('complaint raised')
     setTimeout(()=>setNotify(''),5000);
+    setName('');
+    setNumber('');
+    setText('');
   };
 
   return (
@@ -55,6 +58,7 @@ export default function RaiseComplaint() {
             style={{
                 backgroundColor:'white',
                 color:'black',
+                borderRadius:'8px',
             }}
 
             onChange={(e)=>setText(e.target.value)}
