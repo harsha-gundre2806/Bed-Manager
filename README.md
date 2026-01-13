@@ -85,14 +85,10 @@ ForgotPassword.jsx - Authentication page with email input form that sends passwo
 
 Login.jsx - Main authentication page with email/password form that validates credentials and redirects to role-based dashboard after successful login. Handles Supabase auth, stores user session, includes links to register and forgot password.
 
-Register.jsx - Patient registration page with form fields (name, email, phone, password, confirm password) creating new patient accounts. Validates input, checks password strength, creates Supabase user, and redirects to patient dashboard.
-
 
 pages/patient/
 
 MyRequests.jsx - Page displaying patient's service request history in table/card format with filtering by status (queued/completed/all). Fetches request data from API, allows viewing details and ratings given for each request.
-
-RequestService.jsx - Full-page form for creating detailed service requests with service type, urgency level, and description fields. Submits new request to queue via API, shows confirmation, and redirects to dashboard.
 
 
 pages/staff/
