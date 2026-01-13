@@ -2,6 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import AddEmployeePage from "../pages/admin/AddEmployeePage";
 import CreateProfile from "../components/patient/CreateProfile";
 import EditProfile from "../components/patient/EditProfile";
+import ServiceRequest from "../components/patient/ServiceRequest";
+import RateStaff from "../components/patient/RateStaff";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +23,14 @@ const router = createBrowserRouter([
     path: "/edit-profile",
     element: <EditProfile />,
   },
-  
+  {
+    path: "/service-request",
+    element: <ServiceRequest />,
+  },
+  {
+    path: "/rate-staff",
+    element: <RateStaff />,
+  },
 ]);
 
 export default router;

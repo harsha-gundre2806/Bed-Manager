@@ -13,7 +13,7 @@ export default function CreateProfile() {
     const [address,setAddress]=useState('');
     const [notify, setNotify] = useState('');
 
-    const handleSubmit = (e)=> {
+    const handleSubmit = (e)=> {    // we will connect it to backend
         e.preventDefault();
 
         setNotify('profile created');

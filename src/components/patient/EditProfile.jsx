@@ -29,7 +29,7 @@ export default function EditProfile() {
     setAddress(existingprofile.address);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => {   // we will connect it to backend
     e.preventDefault();
     console.log('Updated profile details:', {
       name,
