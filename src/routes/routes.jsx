@@ -5,6 +5,7 @@ import EditProfile from "../components/patient/EditProfile";
 import ServiceRequest from "../components/patient/ServiceRequest";
 import RateStaff from "../components/patient/RateStaff";
 import RaiseComplaint from "../components/patient/RaiseComplaint";
+import PatientDashboard from "../containers/PatientDashboard";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/raise-complaint",
     element: <RaiseComplaint />,
+  },
+  {
+    path: "/patient-dashboard",
+    element: <PatientDashboard />,
   },
 ]);
 
