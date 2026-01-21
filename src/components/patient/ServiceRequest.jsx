@@ -1,8 +1,11 @@
 //Form to submit new service request that enters admin queue
 // used same css as create profile and edit profile
+// connect it to supabase
 
-import {useState,useEffect} from 'react'
+
+import {useState,useEffect} from 'react';
 import Notification from '../common/Notification';
+import '../../styles/Patientprofile.css';
 
 export default function ServiceRequest() {
     const [number,setNumber] = useState('');

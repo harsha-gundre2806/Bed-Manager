@@ -1,8 +1,9 @@
 //Form for patients to rate and provide feedback on staff service
+// connect it to supabase
 
 import {useState , useEffect} from 'react'
 import Notification from '../common/Notification'
-
+import '../../styles/Patientprofile.css'
 import { Rating } from 'react-simple-star-rating'
 
 export default function RateStaff() {

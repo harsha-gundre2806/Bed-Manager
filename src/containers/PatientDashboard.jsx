@@ -24,18 +24,18 @@ export default function PatientDashboard() {
             case 'request': return <ServiceRequest />;  
             default: return (
             <div style={{textAlign: 'center', color:'black' , marginTop: '50px'}}>
-                <h1>Welcome to Home Care Services</h1>
-                <p>Select an option from the sidebar to get started.</p>
+                <h1>welcome to home care services</h1>
+                <p>select option from sidebar</p>
             </div>
         );   
         }
     };
     return (
-        <div className='viewport'>
-            <div className="container">
-            <aside className="sidebar">
-                <h2 className="heading">home care services</h2>
-                <nav className='nav'>
+        <div className='d-viewport'>
+            <div className="d-container">
+            <aside className="d-sidebar">
+                <h2 className="d-heading">home care services</h2>
+                <nav className='d-nav'>
                     <button className={activeTab === 'overview' ? 'active' : ''} onClick={() => setActiveTab('overview')}>Home</button>
                     <hr className='divider' />
                     <button className={activeTab === 'create' ? 'active' : ''} onClick={() => setActiveTab('create')}>Create Profile</button>
@@ -45,13 +45,13 @@ export default function PatientDashboard() {
                     <button className={activeTab === 'complaint' ? 'active' : ''} onClick={() => setActiveTab('complaint')}>Raise Complaint</button>
                 </nav>
             </aside>
-            <main className="content">
+            <main className="d-content">
                 {activeTab !== 'overview' && (
                     <button className="btn" onClick={() => setActiveTab('overview')}>
                         Back to Dashboard
                     </button>
                 )}
-                <div className="wrapper">
+                <div className="d-wrapper">
                     {Content()}
                 </div>
             </main>

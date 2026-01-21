@@ -1,6 +1,8 @@
 // Form for new patients to create their profile with medical details
 // same css for create profile and edit profile
 
+// connect it to supabase to save detailss
+
 import '../../styles/Patientprofile.css'
 import {useState} from 'react'
 import Notification from '../common/Notification';

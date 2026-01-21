@@ -1,5 +1,8 @@
 //Form for patients to update their existing profile information
 // same css for create profile and edit profile
+
+// connect it to supabase to edit patient details in database
+
 import '../../styles/Patientprofile.css'
 import { useState, useEffect } from 'react';
 import Notification from '../common/Notification';

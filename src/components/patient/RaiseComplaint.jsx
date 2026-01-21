@@ -1,8 +1,9 @@
 // Form for patients to submit complaints about staff or service
+// connect it to database 
 
 import {useState, useEffect} from 'react'
 import Notification from '../common/Notification'
-
+import '../../styles/Patientprofile.css'
 
 export default function RaiseComplaint() {
   const [name, setName] = useState('');
