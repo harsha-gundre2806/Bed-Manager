@@ -2,7 +2,7 @@
 // need to add home to it
 
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import '../styles/Dashboard.css'; 
 
 
@@ -11,9 +11,17 @@ import EditProfile from '../components/patient/EditProfile';
 import RaiseComplaint from '../components/patient/RaiseComplaint';
 import RateStaff from '../components/patient/RateStaff';
 import ServiceRequest from '../components/patient/ServiceRequest';
+import LoadingSpinner from '../components/common/LoadingSpinner';
 
 export default function PatientDashboard() {
     const [activeTab, setActiveTab] = useState('overview');
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {   //loading will be changed later according to code
+            setIsLoading(false);
+        }, 3000);
+    }, []);
 
     const Content = () => {
         switch (activeTab) {
@@ -32,12 +40,13 @@ export default function PatientDashboard() {
     };
     return (
         <div className='d-viewport'>
+            {isLoading && <LoadingSpinner />}
             <div className="d-container">
             <aside className="d-sidebar">
                 <h2 className="d-heading">home care services</h2>
                 <nav className='d-nav'>
                     <button className={activeTab === 'overview' ? 'active' : ''} onClick={() => setActiveTab('overview')}>Home</button>
-                    <hr className='divider' />
+                    <hr className='d-divider' />
                     <button className={activeTab === 'create' ? 'active' : ''} onClick={() => setActiveTab('create')}>Create Profile</button>
                     <button className={activeTab === 'edit' ? 'active' : ''} onClick={() => setActiveTab('edit')}>Edit Profile</button>
                     <button className={activeTab === 'request' ? 'active' : ''} onClick={() => setActiveTab('request')}>Service Request</button>
@@ -47,7 +56,7 @@ export default function PatientDashboard() {
             </aside>
             <main className="d-content">
                 {activeTab !== 'overview' && (
-                    <button className="btn" onClick={() => setActiveTab('overview')}>
+                    <button className="d-btn" onClick={() => setActiveTab('overview')}>
                         Back to Dashboard
                     </button>
                 )}
