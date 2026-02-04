@@ -94,7 +94,7 @@ export default function ServiceRequest({ onSuccess }) {
             required
             onChange={(e) => setAddress(e.target.value)}
           />
-          <textarea
+          <textarea 
             value={text}
             rows="3"
             onChange={(e) => setText(e.target.value)}
