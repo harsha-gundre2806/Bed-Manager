@@ -96,8 +96,10 @@ export default function ServiceRequest({ onSuccess }) {
           />
           <textarea 
             value={text}
+            placeholder="Enter the reason for service"
             rows="3"
             onChange={(e) => setText(e.target.value)}
+            required
           />
           <select
             value={emergency}

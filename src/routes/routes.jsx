@@ -6,6 +6,8 @@ import ServiceRequest from "../components/patient/ServiceRequest";
 import RateStaff from "../components/patient/RateStaff";
 import RaiseComplaint from "../components/patient/RaiseComplaint";
 import PatientDashboard from "../containers/PatientDashboard";
+import Login from "../pages/auth/Login";
+import ForgotPassword from "../pages/auth/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
   {
     path: "/patient-dashboard",
     element: <PatientDashboard />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
   },
 ]);
 

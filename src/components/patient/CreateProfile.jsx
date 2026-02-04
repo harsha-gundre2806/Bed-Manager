@@ -15,6 +15,7 @@ export default function CreateProfile({ onSuccess }) {
     const[dob,setDob]=useState('');
     const [address,setAddress]=useState('');
     const [notify, setNotify] = useState('');
+    const [password , setPassword] =useState('');
     
 
     const handleSubmit = async (e) => {
@@ -70,6 +71,14 @@ export default function CreateProfile({ onSuccess }) {
             required
             onChange={(e)=>setNumber(e.target.value)}
             />
+            <input 
+            type='password'
+            value={password}
+            placeholder='enter password'
+            required
+            onChange={(e)=>setPassword(e.target.value)}
+            />
+
             <input
             type='email'
             value={email}

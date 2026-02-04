@@ -91,8 +91,10 @@ export default function EditProfile({ onSuccess }) {
           />
           <input
             type="email"
+            placeholder="Enter your mail id"
             value={email}
-            disabled
+            required
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <input
             type="date"
