@@ -1,0 +1,54 @@
+.assessment-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.assessment-container h2 {
+  margin-bottom: 20px;
+}
+
+.assessment-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.assessment-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: black;
+}
+
+.label {
+  font-weight: 600;
+  color: #475569;
+}
+
+/* status colors */
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.assigned {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status.completed {
+  background: #dcfce7;
+  color: #166534;
+}

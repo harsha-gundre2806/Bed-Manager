@@ -11,6 +11,8 @@ import ForgotPassword from "../pages/auth/ForgotPassword";
 import ProtectedRoute from "./ProtectedRoute";
 import MyRating from "../components/staff/MyRatings";
 import ServiceStatus from "../components/staff/ServiceStatus";
+import MyAssessment from "../pages/staff/MyAssignments";
+import StaffDashboard from "../containers/StaffDashboard";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +67,14 @@ const router = createBrowserRouter([
   {
     path: "/service-status",
     element: <ServiceStatus />,
+  },
+  {
+    path: "/my-assessment",
+    element: <MyAssessment />,
+  },
+  {
+    path: "/staff-dashboard",
+    element: <StaffDashboard />,
   },
 ]);
 
