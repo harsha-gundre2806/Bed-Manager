@@ -10,6 +10,7 @@ import Login from "../pages/auth/Login";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import ProtectedRoute from "./ProtectedRoute";
 import MyRating from "../components/staff/MyRatings";
+import ServiceStatus from "../components/staff/ServiceStatus";
 
 const router = createBrowserRouter([
   {
@@ -57,9 +58,13 @@ const router = createBrowserRouter([
     path: "/forgot-password",
     element: <ForgotPassword />,
   },
-   {
+  {
     path: "/my-ratings",
     element: <MyRating />,
+  },
+  {
+    path: "/service-status",
+    element: <ServiceStatus />,
   },
 ]);
 
